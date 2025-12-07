@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绘图作品馆 - 细胞里的靖边</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/module.css">
+</head>
+<body>
+    <div class="module-container">
+        <!-- 页面标题 -->
+        <header class="module-header">
+            <h1 class="module-title">
+                <i class="fas fa-palette"></i>
+                绘图作品馆
+            </h1>
+            <p class="module-subtitle">展示学生精心绘制的细胞结构图，激发创作灵感</p>
+        </header>
+
+        <!-- 主要内容区域 -->
+        <main class="module-content">
+            <!-- 学生细胞绘图作品（本地静态资源） -->
+            <section class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-images"></i>
+                    学生细胞绘图作品画廊
+                </h2>
+                <div id="student-gallery" class="gallery-grid"></div>
+                <p style="margin-top:12px;color:#666666;font-size:14px">图片路径规则：`static/images/绘图作品_序号.jpg`；如未命名为下划线形式，代码会自动回退到 `static/images/绘图作品/序号.jpg`。</p>
+            </section>
+            
+            </main>
+
+        <!-- 底部信息 -->
+        <footer class="module-footer">
+            <p class="footer-info">
+                <i class="fas fa-graduation-cap"></i>
+                展示学生创意，激发学习兴趣
+            </p>
+        </footer>
+    </div>
+
+    <!-- 高清图弹窗 -->
+    <div id="artwork-modal" class="modal-overlay" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-label="高清作品预览">
+            <button class="modal-close" aria-label="关闭预览"><i class="fas fa-times"></i></button>
+            <div class="modal-body">
+                <img id="modal-image" src="" alt="高清图" style="width:100%;height:auto;display:block" />
+                <div class="download-bar" style="margin-top:10px">
+                    <a id="download-original" class="btn-secondary" href="#" download>
+                        <i class="fas fa-download"></i>
+                        下载原图
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/module.js"></script>
+    <script>
+        // 构建学生作品画廊（按序号注入）
+        (function buildStudentGallery(){
+            const nums = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
+            const grid = document.getElementById('student-gallery');
+            const frag = document.createDocumentFragment();
+            nums.forEach(n => {
+                const item = document.createElement('div');
+                item.className = 'gallery-item';
+                item.dataset.artworkId = `student-${n}`;
+
+                const imgWrap = document.createElement('div');
+                imgWrap.className = 'item-image';
+                const img = document.createElement('img');
+                const underscore = `../../static/images/绘图作品_${n}.jpg`;
+                const folder = `../../static/images/绘图作品/${n}.jpg`;
+                img.src = underscore;
+                img.setAttribute('data-hd', underscore);
+                img.alt = `绘图作品 ${n}`;
+                img.onerror = function(){ this.src = folder; this.setAttribute('data-hd', folder); };
+
+                const overlay = document.createElement('div');
+                overlay.className = 'item-overlay';
+                const btn = document.createElement('button');
+                btn.className = 'view-btn';
+                btn.innerHTML = '<i class="fas fa-eye"></i>';
+                btn.addEventListener('click', () => viewArtwork(`student-${n}`));
+                overlay.appendChild(btn);
+                imgWrap.appendChild(img);
+                imgWrap.appendChild(overlay);
+
+                const info = document.createElement('div');
+                info.className = 'item-info';
+                const h3 = document.createElement('h3');
+                h3.textContent = `学生细胞绘图作品 #${n}`;
+                info.appendChild(h3);
+
+                item.appendChild(imgWrap);
+                item.appendChild(info);
+                frag.appendChild(item);
+            });
+            grid.appendChild(frag);
+        })();
+
+        // 高清图弹窗：打开与关闭
+        function viewArtwork(artworkId) {
+            const modal = document.getElementById('artwork-modal');
+            const img = document.getElementById('modal-image');
+            const dl = document.getElementById('download-original');
+            const el = document.querySelector(`[data-artwork-id="${artworkId}"] img`);
+            const hd = el ? el.getAttribute('data-hd') || el.src : '';
+            img.src = hd;
+            dl.href = hd;
+            modal.setAttribute('aria-hidden', 'false');
+            modal.classList.add('open');
+        }
+
+        // 弹窗关闭交互
+        (function setupModal(){
+            const modal = document.getElementById('artwork-modal');
+            const closeBtn = modal.querySelector('.modal-close');
+            const close = () => { modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); };
+            closeBtn.addEventListener('click', close);
+            modal.addEventListener('click', (e)=>{ if(e.target===modal) close(); });
+            document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') close(); });
+        })();
+    </script>
+</body>
+</html>

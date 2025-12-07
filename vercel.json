@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/static/(.*)", "dest": "细胞里的靖边数字博物馆/static/$1" },
+    { "src": "/modules/(.*)", "dest": "细胞里的靖边数字博物馆/modules/$1" },
+    { "src": "/", "dest": "细胞里的靖边数字博物馆/index.html" },
+    { "src": "/(.*)", "dest": "细胞里的靖边数字博物馆/$1" }
+  ]
+}

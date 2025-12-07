@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>细胞里的靖边 - 线上数字博物馆</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- 页面加载动画 -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p class="loading-text">正在加载博物馆...</p>
+        </div>
+    </div>
+
+    <!-- 主页面容器 -->
+    <div id="main-container" class="main-container">
+        <!-- 顶部标题栏 -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="museum-title">
+                    <i class="fas fa-microscope"></i>
+                    细胞里的靖边
+                </h1>
+                <div class="search-container">
+                    <input type="text" id="search-input" class="search-input" placeholder="搜索细胞结构或学生作品...">
+                    <button id="search-btn" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- 主体内容区域 -->
+        <div class="content-wrapper">
+            <!-- 左侧导航栏 -->
+            <nav class="sidebar">
+                <div class="nav-menu">
+                    <div class="nav-item active" data-module="basic-knowledge">
+                        <i class="fas fa-book-open"></i>
+                        <span>细胞知识馆</span>
+                    </div>
+                    <div class="nav-item" data-module="guide-plans">
+                        <i class="fas fa-file-alt"></i>
+                        <span>导学案展厅</span>
+                    </div>
+                    <div class="nav-item" data-module="drawings">
+                        <i class="fas fa-palette"></i>
+                        <span>绘图作品馆</span>
+                    </div>
+                    <div class="nav-item" data-module="models">
+                        <i class="fas fa-cube"></i>
+                        <span>细胞模型馆</span>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- 右侧内容展示区 -->
+            <main class="main-content">
+                <iframe id="content-frame" class="content-frame" 
+                        src="modules/basic-knowledge/index.html" 
+                        frameborder="0"
+                        title="内容展示区域">
+                </iframe>
+            </main>
+        </div>
+
+        <!-- 底部标注 -->
+        <footer class="footer">
+            <p class="footer-text">
+                <i class="fas fa-graduation-cap"></i>
+                适配人教版高中生物必修一
+            </p>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

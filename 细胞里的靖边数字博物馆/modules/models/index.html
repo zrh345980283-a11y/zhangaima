@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>细胞模型馆 - 细胞里的靖边</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/module.css">
+</head>
+<body>
+    <div class="module-container">
+        <!-- 页面标题 -->
+        <header class="module-header">
+            <h1 class="module-title">
+                <i class="fas fa-cube"></i>
+                细胞模型馆
+            </h1>
+            <p class="module-subtitle">立体展示细胞结构，直观理解生命奥秘</p>
+        </header>
+
+        <!-- 主要内容区域 -->
+        <main class="module-content">
+            <!-- 示例作品展示（置顶，仅视频） -->
+            <section class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-cube"></i>
+                    示例作品展示
+                </h2>
+                <div class="model-detail">
+                    <div class="media-right" style="width:100%">
+                        <div class="video-viewer" id="example-video-box">
+                            <button class="video-play-overlay" aria-label="播放视频"><i class="fas fa-play"></i></button>
+                            <video id="example-video" src="https://samplelib.com/lib/preview/mp4/sample-960x540.mp4" poster="../../static/images/模型图片/示例.jpg"></video>
+                        </div>
+                        <div class="download-bar" style="margin-top:10px">
+                            <a class="btn-secondary" href="https://samplelib.com/lib/preview/mp4/sample-960x540.mp4" download>
+                                <i class="fas fa-download"></i>
+                                下载视频
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- “繁星”组模型：图片 + 视频 -->
+            <section class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-cube"></i>
+                    “繁星”组模型展示
+                </h2>
+                <div class="model-detail">
+                    <div class="media-left">
+                        <div class="image-viewer">
+                            <img id="star-image-main" src="../../static/images/模型图片/“繁星”组_01.jpg" alt="模型图片_繁星组主视角" />
+                            <div class="download-bar">
+                                <a class="btn-secondary" href="../../static/images/模型图片/“繁星”组_01.jpg" download>
+                                    <i class="fas fa-download"></i>
+                                    下载图片
+                                </a>
+                            </div>
+                        </div>
+                        <div class="thumbs" aria-label="多角度缩略图">
+                            <button class="thumb" data-src="../../static/images/模型图片/“繁星”组_01.jpg" aria-label="主视角">
+                                <img src="../../static/images/模型图片/“繁星”组_01.jpg" alt="缩略图-主视角" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <div class="video-viewer" id="star-video-box">
+                            <button class="video-play-overlay" aria-label="播放视频"><i class="fas fa-play"></i></button>
+                            <video id="star-video" src="https://samplelib.com/lib/preview/mp4/sample-960x540.mp4" poster="../../static/images/模型图片/“繁星”组_01.jpg"></video>
+                        </div>
+                        <div class="download-bar">
+                            <a class="btn-secondary" href="https://samplelib.com/lib/preview/mp4/sample-960x540.mp4" download>
+                                <i class="fas fa-download"></i>
+                                下载视频
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-cube"></i>
+                    “海棠”组模型展示
+                </h2>
+                <div class="model-detail">
+                    <div class="media-left">
+                        <div class="image-viewer">
+                            <img id="haitang-image-main" src="../../static/images/模型图片/“海棠”组_02.jpg" alt="模型图片_海棠组主视角" />
+                            <div class="download-bar">
+                                <a class="btn-secondary" href="../../static/images/模型图片/“海棠”组_02.jpg" download>
+                                    <i class="fas fa-download"></i>
+                                    下载图片
+                                </a>
+                            </div>
+                        </div>
+                        <div class="thumbs" aria-label="多角度缩略图">
+                            <button class="thumb" data-src="../../static/images/模型图片/“海棠”组_02.jpg" aria-label="主视角">
+                                <img src="../../static/images/模型图片/“海棠”组_02.jpg" alt="缩略图-主视角" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <div class="video-viewer" id="haitang-video-box">
+                            <button class="video-play-overlay" aria-label="播放视频"><i class="fas fa-play"></i></button>
+                            <video id="haitang-video" src="https://samplelib.com/lib/preview/mp4/sample-960x540.mp4" poster="../../static/images/模型图片/“海棠”组_02.jpg"></video>
+                        </div>
+                        <div class="download-bar">
+                            <a class="btn-secondary" href="https://samplelib.com/lib/preview/mp4/sample-960x540.mp4" download>
+                                <i class="fas fa-download"></i>
+                                下载视频
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-cube"></i>
+                    “羁绊”组模型展示
+                </h2>
+                <div class="model-detail">
+                    <div class="media-left">
+                        <div class="image-viewer">
+                            <img id="jiban-image-main" src="../../static/images/模型图片/“羁绊”组_03.jpg" alt="模型图片_羁绊组主视角" />
+                            <div class="download-bar">
+                                <a class="btn-secondary" href="../../static/images/模型图片/“羁绊”组_03.jpg" download>
+                                    <i class="fas fa-download"></i>
+                                    下载图片
+                                </a>
+                            </div>
+                        </div>
+                        <div class="thumbs" aria-label="多角度缩略图">
+                            <button class="thumb" data-src="../../static/images/模型图片/“羁绊”组_03.jpg" aria-label="主视角">
+                                <img src="../../static/images/模型图片/“羁绊”组_03.jpg" alt="缩略图-主视角" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <div class="video-viewer" id="jiban-video-box">
+                            <button class="video-play-overlay" aria-label="播放视频"><i class="fas fa-play"></i></button>
+                            <video id="jiban-video" src="https://samplelib.com/lib/preview/mp4/sample-960x540.mp4" poster="../../static/images/模型图片/“羁绊”组_03.jpg"></video>
+                        </div>
+                        <div class="download-bar">
+                            <a class="btn-secondary" href="https://samplelib.com/lib/preview/mp4/sample-960x540.mp4" download>
+                                <i class="fas fa-download"></i>
+                                下载视频
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-cube"></i>
+                    “临天”组模型展示
+                </h2>
+                <div class="model-detail">
+                    <div class="media-left">
+                        <div class="image-viewer">
+                            <img id="lintian-image-main" src="../../static/images/模型图片/“临天”组_04.jpg" alt="模型图片_临天组主视角" />
+                            <div class="download-bar">
+                                <a class="btn-secondary" href="../../static/images/模型图片/“临天”组_04.jpg" download>
+                                    <i class="fas fa-download"></i>
+                                    下载图片
+                                </a>
+                            </div>
+                        </div>
+                        <div class="thumbs" aria-label="多角度缩略图">
+                            <button class="thumb" data-src="../../static/images/模型图片/“临天”组_04.jpg" aria-label="主视角">
+                                <img src="../../static/images/模型图片/“临天”组_04.jpg" alt="缩略图-主视角" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <div class="video-viewer" id="lintian-video-box">
+                            <button class="video-play-overlay" aria-label="播放视频"><i class="fas fa-play"></i></button>
+                            <video id="lintian-video" src="https://samplelib.com/lib/preview/mp4/sample-960x540.mp4" poster="../../static/images/模型图片/“临天”组_04.jpg"></video>
+                        </div>
+                        <div class="download-bar">
+                            <a class="btn-secondary" href="https://samplelib.com/lib/preview/mp4/sample-960x540.mp4" download>
+                                <i class="fas fa-download"></i>
+                                下载视频
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-cube"></i>
+                    “拾光”组模型展示
+                </h2>
+                <div class="model-detail">
+                    <div class="media-left">
+                        <div class="image-viewer">
+                            <img id="shiguang-image-main" src="../../static/images/模型图片/“拾光”组_05.jpg" alt="模型图片_拾光组主视角" />
+                            <div class="download-bar">
+                                <a class="btn-secondary" href="../../static/images/模型图片/“拾光”组_05.jpg" download>
+                                    <i class="fas fa-download"></i>
+                                    下载图片
+                                </a>
+                            </div>
+                        </div>
+                        <div class="thumbs" aria-label="多角度缩略图">
+                            <button class="thumb" data-src="../../static/images/模型图片/“拾光”组_05.jpg" aria-label="主视角">
+                                <img src="../../static/images/模型图片/“拾光”组_05.jpg" alt="缩略图-主视角" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <div class="video-viewer" id="shiguang-video-box">
+                            <button class="video-play-overlay" aria-label="播放视频"><i class="fas fa-play"></i></button>
+                            <video id="shiguang-video" src="https://samplelib.com/lib/preview/mp4/sample-960x540.mp4" poster="../../static/images/模型图片/“拾光”组_05.jpg"></video>
+                        </div>
+                        <div class="download-bar">
+                            <a class="btn-secondary" href="https://samplelib.com/lib/preview/mp4/sample-960x540.mp4" download>
+                                <i class="fas fa-download"></i>
+                                下载视频
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-cube"></i>
+                    “为真”组模型展示
+                </h2>
+                <div class="model-detail">
+                    <div class="media-left">
+                        <div class="image-viewer">
+                            <img id="weizhen-image-main" src="../../static/images/模型图片/“为真”组_06.jpg" alt="模型图片_为真组主视角" />
+                            <div class="download-bar">
+                                <a class="btn-secondary" href="../../static/images/模型图片/“为真”组_06.jpg" download>
+                                    <i class="fas fa-download"></i>
+                                    下载图片
+                                </a>
+                            </div>
+                        </div>
+                        <div class="thumbs" aria-label="多角度缩略图">
+                            <button class="thumb" data-src="../../static/images/模型图片/“为真”组_06.jpg" aria-label="主视角">
+                                <img src="../../static/images/模型图片/“为真”组_06.jpg" alt="缩略图-主视角" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <div class="video-viewer" id="weizhen-video-box">
+                            <button class="video-play-overlay" aria-label="播放视频"><i class="fas fa-play"></i></button>
+                            <video id="weizhen-video" src="https://samplelib.com/lib/preview/mp4/sample-960x540.mp4" poster="../../static/images/模型图片/“为真”组_06.jpg"></video>
+                        </div>
+                        <div class="download-bar">
+                            <a class="btn-secondary" href="https://samplelib.com/lib/preview/mp4/sample-960x540.mp4" download>
+                                <i class="fas fa-download"></i>
+                                下载视频
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-cube"></i>
+                    “星海”组模型展示
+                </h2>
+                <div class="model-detail">
+                    <div class="media-left">
+                        <div class="image-viewer">
+                            <img id="xinghai-image-main" src="../../static/images/模型图片/“星海”组_07.jpg" alt="模型图片_星海组主视角" />
+                            <div class="download-bar">
+                                <a class="btn-secondary" href="../../static/images/模型图片/“星海”组_07.jpg" download>
+                                    <i class="fas fa-download"></i>
+                                    下载图片
+                                </a>
+                            </div>
+                        </div>
+                        <div class="thumbs" aria-label="多角度缩略图">
+                            <button class="thumb" data-src="../../static/images/模型图片/“星海”组_07.jpg" aria-label="主视角">
+                                <img src="../../static/images/模型图片/“星海”组_07.jpg" alt="缩略图-主视角" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <div class="video-viewer" id="xinghai-video-box">
+                            <button class="video-play-overlay" aria-label="播放视频"><i class="fas fa-play"></i></button>
+                            <video id="xinghai-video" src="https://samplelib.com/lib/preview/mp4/sample-960x540.mp4" poster="../../static/images/模型图片/“星海”组_07.jpg"></video>
+                        </div>
+                        <div class="download-bar">
+                            <a class="btn-secondary" href="https://samplelib.com/lib/preview/mp4/sample-960x540.mp4" download>
+                                <i class="fas fa-download"></i>
+                                下载视频
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 模型分类 -->
+            <section class="content-section hidden">
+                <h2 class="section-title">
+                    <i class="fas fa-th-large"></i>
+                    模型分类展示
+                </h2>
+                <div class="model-categories">
+                    <div class="category-card" data-category="physical">
+                        <div class="card-icon">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                        <h3>实体模型</h3>
+                        <p>纸质、塑料、泡沫等材料制作的立体模型</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-cube"></i> 15个模型</span>
+                        </div>
+                    </div>
+                    <div class="category-card" data-category="digital">
+                        <div class="card-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>数字模型</h3>
+                        <p>3D建模、虚拟展示、交互式模型</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-cube"></i> 8个模型</span>
+                        </div>
+                    </div>
+                    <div class="category-card" data-category="interactive">
+                        <div class="card-icon">
+                            <i class="fas fa-hand-pointer"></i>
+                        </div>
+                        <h3>互动模型</h3>
+                        <p>可拆解、可组装、可操作的功能模型</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-cube"></i> 12个模型</span>
+                        </div>
+                    </div>
+                    <div class="category-card" data-category="creative">
+                        <div class="card-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>创意模型</h3>
+                        <p>环保材料、创新设计、独特构思的作品</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-cube"></i> 10个模型</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 精选模型展示 -->
+            <section class="content-section hidden">
+                <h2 class="section-title">
+                    <i class="fas fa-star"></i>
+                    精选模型展示
+                </h2>
+                <div class="model-showcase">
+                    <div class="model-item" data-category="physical">
+                        <div class="model-preview">
+                            <img src="https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=3D%20paper%20model%20of%20animal%20cell%20showing%20nucleus%20mitochondria%20and%20other%20organelles%2C%20educational%20craft%20project%2C%20colorful%20and%20detailed&image_size=square_hd" alt="动物细胞纸质模型">
+                            <div class="model-overlay">
+                                <button class="view-btn" onclick="viewModel('animal-cell-paper')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="rotate-btn" onclick="rotateModel('animal-cell-paper')">
+                                    <i class="fas fa-sync-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="model-info">
+                            <h3>动物细胞纸质模型</h3>
+                            <p class="model-author">制作者：张小明</p>
+                            <p class="model-grade">高二（3）班</p>
+                            <div class="model-description">
+                                <p>使用彩色卡纸制作的动物细胞立体模型，清晰展示了细胞核、线粒体、内质网等主要细胞器。</p>
+                            </div>
+                            <div class="model-materials">
+                                <span class="material-tag">彩色卡纸</span>
+                                <span class="material-tag">胶水</span>
+                                <span class="material-tag">记号笔</span>
+                            </div>
+                            <div class="model-actions">
+                                <button class="btn-primary" onclick="viewModelDetails('animal-cell-paper')">
+                                    <i class="fas fa-info-circle"></i>
+                                    查看详情
+                                </button>
+                                <button class="btn-secondary" onclick="downloadInstructions('animal-cell-paper')">
+                                    <i class="fas fa-download"></i>
+                                    制作指南
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-item" data-category="digital">
+                        <div class="model-preview">
+                            <img src="https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=3D%20digital%20rendering%20of%20plant%20cell%20with%20cell%20wall%20chloroplasts%20and%20vacuole%2C%20scientific%20visualization%2C%20high%20quality%203D%20model&image_size=square_hd" alt="植物细胞3D模型">
+                            <div class="model-overlay">
+                                <button class="view-btn" onclick="viewModel('plant-cell-3d')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="rotate-btn" onclick="rotateModel('plant-cell-3d')">
+                                    <i class="fas fa-sync-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="model-info">
+                            <h3>植物细胞3D数字模型</h3>
+                            <p class="model-author">制作者：李小红</p>
+                            <p class="model-grade">高一（1）班</p>
+                            <div class="model-description">
+                                <p>使用专业3D建模软件制作的植物细胞模型，可以360度旋转观察，细胞壁、叶绿体等结构清晰可见。</p>
+                            </div>
+                            <div class="model-materials">
+                                <span class="material-tag">3D建模</span>
+                                <span class="material-tag">数字渲染</span>
+                                <span class="material-tag">交互展示</span>
+                            </div>
+                            <div class="model-actions">
+                                <button class="btn-primary" onclick="viewModelDetails('plant-cell-3d')">
+                                    <i class="fas fa-info-circle"></i>
+                                    查看详情
+                                </button>
+                                <button class="btn-secondary" onclick="interactiveView('plant-cell-3d')">
+                                    <i class="fas fa-play"></i>
+                                    交互体验
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-item" data-category="interactive">
+                        <div class="model-preview">
+                            <img src="https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=Interactive%20cell%20model%20with%20removable%20organelles%2C%20educational%20toy%20style%2C%20colorful%20pieces%20that%20can%20be%20assembled&image_size=square_hd" alt="可拆装细胞模型">
+                            <div class="model-overlay">
+                                <button class="view-btn" onclick="viewModel('interactive-cell')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="rotate-btn" onclick="rotateModel('interactive-cell')">
+                                    <i class="fas fa-sync-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="model-info">
+                            <h3>可拆装细胞模型</h3>
+                            <p class="model-author">制作者：王小华</p>
+                            <p class="model-grade">高二（2）班</p>
+                            <div class="model-description">
+                                <p>采用磁吸设计的细胞模型，可以反复拆装，帮助学生理解细胞器之间的空间关系和相对位置。</p>
+                            </div>
+                            <div class="model-materials">
+                                <span class="material-tag">磁吸材料</span>
+                                <span class="material-tag">塑料</span>
+                                <span class="material-tag">可拆装</span>
+                            </div>
+                            <div class="model-actions">
+                                <button class="btn-primary" onclick="viewModelDetails('interactive-cell')">
+                                    <i class="fas fa-info-circle"></i>
+                                    查看详情
+                                </button>
+                                <button class="btn-secondary" onclick="assemblyDemo('interactive-cell')">
+                                    <i class="fas fa-tools"></i>
+                                    组装演示
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-item" data-category="creative">
+                        <div class="model-preview">
+                            <img src="https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=Creative%20cell%20model%20made%20from%20recycled%20materials%2C%20eco-friendly%20design%2C%20colorful%20and%20educational%2C%20student%20craft%20project&image_size=square_hd" alt="环保材料细胞模型">
+                            <div class="model-overlay">
+                                <button class="view-btn" onclick="viewModel('eco-cell')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="rotate-btn" onclick="rotateModel('eco-cell')">
+                                    <i class="fas fa-sync-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="model-info">
+                            <h3>环保材料细胞模型</h3>
+                            <p class="model-author">制作者：陈小艺</p>
+                            <p class="model-grade">高一（4）班</p>
+                            <div class="model-description">
+                                <p>使用废旧塑料瓶、纸盒等环保材料制作的细胞模型，既环保又富有创意，体现了可持续发展的理念。</p>
+                            </div>
+                            <div class="model-materials">
+                                <span class="material-tag">废塑料瓶</span>
+                                <span class="material-tag">纸盒</span>
+                                <span class="material-tag">环保材料</span>
+                            </div>
+                            <div class="model-actions">
+                                <button class="btn-primary" onclick="viewModelDetails('eco-cell')">
+                                    <i class="fas fa-info-circle"></i>
+                                    查看详情
+                                </button>
+                                <button class="btn-secondary" onclick="showEcoMaterials('eco-cell')">
+                                    <i class="fas fa-leaf"></i>
+                                    环保理念
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 制作指南 -->
+            <section class="content-section hidden">
+                <h2 class="section-title">
+                    <i class="fas fa-hammer"></i>
+                    模型制作指南
+                </h2>
+                <div class="making-guides">
+                    <div class="guide-card">
+                        <div class="guide-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>纸质模型制作教程</h3>
+                        <p>学习如何使用卡纸、剪刀和胶水制作立体细胞模型</p>
+                        <button class="btn-primary" onclick="openTutorial('paper-model')">
+                            <i class="fas fa-play"></i>
+                            观看教程
+                        </button>
+                    </div>
+                    <div class="guide-card">
+                        <div class="guide-icon">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <h3>环保材料创意</h3>
+                        <p>利用废旧材料制作细胞模型的创意方法和技巧</p>
+                        <button class="btn-secondary" onclick="openTutorial('eco-model')">
+                            <i class="fas fa-play"></i>
+                            观看教程
+                        </button>
+                    </div>
+                    <div class="guide-card">
+                        <div class="guide-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>3D建模入门</h3>
+                        <p>使用免费软件创建细胞3D数字模型的基础教程</p>
+                        <button class="btn-primary" onclick="openTutorial('3d-modeling')">
+                            <i class="fas fa-play"></i>
+                            观看教程
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- 底部信息 -->
+        <footer class="module-footer">
+            <p class="footer-info">
+                <i class="fas fa-graduation-cap"></i>
+                动手制作，深入理解细胞结构
+            </p>
+        </footer>
+    </div>
+
+    <script src="../../js/module.js"></script>
+    <script>
+        // 繁星组：缩略图切换与视频点击播放
+        document.addEventListener('DOMContentLoaded', () => {
+            const starMain = document.getElementById('star-image-main');
+            document.querySelectorAll('#star-video-box ~ .download-bar, .thumbs .thumb').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const src = btn.getAttribute('data-src');
+                    if (src) starMain.src = src;
+                });
+            });
+            const starVideo = document.getElementById('star-video');
+            const starBox = document.getElementById('star-video-box');
+            const starOverlay = starBox.querySelector('.video-play-overlay');
+            const starPlay = () => { starVideo.setAttribute('controls','controls'); starOverlay.classList.add('hidden'); starVideo.play().catch(()=>{}); };
+            starOverlay.addEventListener('click', starPlay);
+            starVideo.addEventListener('click', () => { if (starVideo.paused) starPlay(); });
+
+            const haitangMain = document.getElementById('haitang-image-main');
+            document.querySelectorAll('#haitang-video-box ~ .download-bar, .thumbs .thumb').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const src = btn.getAttribute('data-src');
+                    if (src && haitangMain) haitangMain.src = src;
+                });
+            });
+            const haitangVideo = document.getElementById('haitang-video');
+            const haitangBox = document.getElementById('haitang-video-box');
+            const haitangOverlay = haitangBox.querySelector('.video-play-overlay');
+            const haitangPlay = () => { haitangVideo.setAttribute('controls','controls'); haitangOverlay.classList.add('hidden'); haitangVideo.play().catch(()=>{}); };
+            haitangOverlay.addEventListener('click', haitangPlay);
+            haitangVideo.addEventListener('click', () => { if (haitangVideo.paused) haitangPlay(); });
+
+            const jibanMain = document.getElementById('jiban-image-main');
+            document.querySelectorAll('#jiban-video-box ~ .download-bar, .thumbs .thumb').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const src = btn.getAttribute('data-src');
+                    if (src && jibanMain) jibanMain.src = src;
+                });
+            });
+            const jibanVideo = document.getElementById('jiban-video');
+            const jibanBox = document.getElementById('jiban-video-box');
+            const jibanOverlay = jibanBox.querySelector('.video-play-overlay');
+            const jibanPlay = () => { jibanVideo.setAttribute('controls','controls'); jibanOverlay.classList.add('hidden'); jibanVideo.play().catch(()=>{}); };
+            jibanOverlay.addEventListener('click', jibanPlay);
+            jibanVideo.addEventListener('click', () => { if (jibanVideo.paused) jibanPlay(); });
+
+            const lintianMain = document.getElementById('lintian-image-main');
+            document.querySelectorAll('#lintian-video-box ~ .download-bar, .thumbs .thumb').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const src = btn.getAttribute('data-src');
+                    if (src && lintianMain) lintianMain.src = src;
+                });
+            });
+            const lintianVideo = document.getElementById('lintian-video');
+            const lintianBox = document.getElementById('lintian-video-box');
+            const lintianOverlay = lintianBox.querySelector('.video-play-overlay');
+            const lintianPlay = () => { lintianVideo.setAttribute('controls','controls'); lintianOverlay.classList.add('hidden'); lintianVideo.play().catch(()=>{}); };
+            lintianOverlay.addEventListener('click', lintianPlay);
+            lintianVideo.addEventListener('click', () => { if (lintianVideo.paused) lintianPlay(); });
+
+            const shiguangMain = document.getElementById('shiguang-image-main');
+            document.querySelectorAll('#shiguang-video-box ~ .download-bar, .thumbs .thumb').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const src = btn.getAttribute('data-src');
+                    if (src && shiguangMain) shiguangMain.src = src;
+                });
+            });
+            const shiguangVideo = document.getElementById('shiguang-video');
+            const shiguangBox = document.getElementById('shiguang-video-box');
+            const shiguangOverlay = shiguangBox.querySelector('.video-play-overlay');
+            const shiguangPlay = () => { shiguangVideo.setAttribute('controls','controls'); shiguangOverlay.classList.add('hidden'); shiguangVideo.play().catch(()=>{}); };
+            shiguangOverlay.addEventListener('click', shiguangPlay);
+            shiguangVideo.addEventListener('click', () => { if (shiguangVideo.paused) shiguangPlay(); });
+
+            const weizhenMain = document.getElementById('weizhen-image-main');
+            const weizhenSection = document.getElementById('weizhen-video-box').closest('.model-detail');
+            weizhenSection.querySelectorAll('.thumbs .thumb').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const src = btn.getAttribute('data-src');
+                    if (src && weizhenMain) weizhenMain.src = src;
+                });
+            });
+            const weizhenVideo = document.getElementById('weizhen-video');
+            const weizhenBox = document.getElementById('weizhen-video-box');
+            const weizhenOverlay = weizhenBox.querySelector('.video-play-overlay');
+            const weizhenPlay = () => { weizhenVideo.setAttribute('controls','controls'); weizhenOverlay.classList.add('hidden'); weizhenVideo.play().catch(()=>{}); };
+            weizhenOverlay.addEventListener('click', weizhenPlay);
+            weizhenVideo.addEventListener('click', () => { if (weizhenVideo.paused) weizhenPlay(); });
+
+            const xinghaiMain = document.getElementById('xinghai-image-main');
+            document.querySelectorAll('#xinghai-video-box ~ .download-bar, .thumbs .thumb').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const src = btn.getAttribute('data-src');
+                    if (src && xinghaiMain) xinghaiMain.src = src;
+                });
+            });
+            const xinghaiVideo = document.getElementById('xinghai-video');
+            const xinghaiBox = document.getElementById('xinghai-video-box');
+            const xinghaiOverlay = xinghaiBox.querySelector('.video-play-overlay');
+            const xinghaiPlay = () => { xinghaiVideo.setAttribute('controls','controls'); xinghaiOverlay.classList.add('hidden'); xinghaiVideo.play().catch(()=>{}); };
+            xinghaiOverlay.addEventListener('click', xinghaiPlay);
+            xinghaiVideo.addEventListener('click', () => { if (xinghaiVideo.paused) xinghaiPlay(); });
+
+            const exampleVideo = document.getElementById('example-video');
+            const exampleBox = document.getElementById('example-video-box');
+            const exampleOverlay = exampleBox.querySelector('.video-play-overlay');
+            const examplePlay = () => { exampleVideo.setAttribute('controls','controls'); exampleOverlay.classList.add('hidden'); exampleVideo.play().catch(()=>{}); };
+            exampleOverlay.addEventListener('click', examplePlay);
+            exampleVideo.addEventListener('click', () => { if (exampleVideo.paused) examplePlay(); });
+        });
+        // 模块特定的JavaScript功能
+        let currentRotation = 0;
+        
+        function viewModel(modelId) {
+            alert(`查看模型: ${modelId} - 功能开发中，敬请期待！`);
+        }
+        
+        function rotateModel(modelId) {
+            currentRotation += 90;
+            const modelElement = document.querySelector(`[onclick="rotateModel('${modelId}')"]`).closest('.model-item');
+            const img = modelElement.querySelector('img');
+            img.style.transform = `rotate(${currentRotation}deg)`;
+            img.style.transition = 'transform 0.5s ease';
+        }
+        
+        function viewModelDetails(modelId) {
+            alert(`查看模型详情: ${modelId} - 功能开发中，敬请期待！`);
+        }
+        
+        function downloadInstructions(modelId) {
+            alert(`下载制作指南: ${modelId} - 功能开发中，敬请期待！`);
+        }
+        
+        function interactiveView(modelId) {
+            alert(`交互体验: ${modelId} - 功能开发中，敬请期待！`);
+        }
+        
+        function assemblyDemo(modelId) {
+            alert(`组装演示: ${modelId} - 功能开发中，敬请期待！`);
+        }
+        
+        function showEcoMaterials(modelId) {
+            alert(`环保材料介绍: ${modelId} - 功能开发中，敬请期待！`);
+        }
+        
+        function openTutorial(tutorialId) {
+            alert(`打开教程: ${tutorialId} - 功能开发中，敬请期待！`);
+        }
+        
+        // 分类卡片点击事件
+        document.querySelectorAll('.category-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const category = this.dataset.category;
+                showCategoryDetails(category);
+            });
+        });
+        
+        function showCategoryDetails(category) {
+            const details = {
+                'physical': '实体模型：纸质、塑料、泡沫等材料制作的立体模型',
+                'digital': '数字模型：3D建模、虚拟展示、交互式模型',
+                'interactive': '互动模型：可拆解、可组装、可操作的功能模型',
+                'creative': '创意模型：环保材料、创新设计、独特构思的作品'
+            };
+            
+            alert(details[category] || '详细信息开发中...');
+        }
+    </script>
+</body>
+</html>

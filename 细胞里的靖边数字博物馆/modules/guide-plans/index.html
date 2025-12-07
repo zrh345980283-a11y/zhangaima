@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导学案展厅 - 细胞里的靖边</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/module.css">
+</head>
+<body>
+    <div class="module-container">
+        <!-- 页面标题 -->
+        <header class="module-header">
+            <h1 class="module-title">
+                <i class="fas fa-file-alt"></i>
+                导学案展厅
+            </h1>
+            <p class="module-subtitle">精心设计的教学方案，引导学生深入理解细胞知识</p>
+        </header>
+
+        <!-- 主要内容区域 -->
+        <main class="module-content">
+            <!-- 导学案图片展示与轮播 -->
+            <section class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-images"></i>
+                    高一（18）班 繆苏禾
+                </h2>
+                <div class="guide-gallery" id="guide-gallery">
+                    <button class="gallery-arrow left" aria-label="上一页"><i class="fas fa-chevron-left"></i></button>
+                    <div class="image-frame paper-effect">
+                        <img id="guide-image" src="../../static/images/导学案/高一（18）班_繆苏禾_01.jpg" alt="导学案图片-第1页">
+                    </div>
+                    <button class="gallery-arrow right" aria-label="下一页"><i class="fas fa-chevron-right"></i></button>
+                    <div class="page-indicator"><span id="page-num">1</span> / <span id="page-total">2</span></div>
+                </div>
+                <div class="replace-info">
+                    <i class="fas fa-info-circle"></i>
+                    图片替换规则：将导学案图片放入 `static/images/` 目录，文件名可采用班级+学生+序号的命名，例如：
+                    `导学案_高一(18)班_学生名_01.jpg`、`导学案_高一（18）班_学生名_02.jpg`。在本页将路径加入 `images` 数组即可展示。
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-images"></i>
+                    高一（18）班 高楚旭
+                </h2>
+                <div class="guide-gallery" id="guide-gallery-2">
+                    <button class="gallery-arrow left" aria-label="上一页"><i class="fas fa-chevron-left"></i></button>
+                    <div class="image-frame paper-effect">
+                        <img id="guide-image-2" src="../../static/images/导学案/高一（18）班_高楚旭_01.jpg" alt="导学案图片-第1页">
+                    </div>
+                    <button class="gallery-arrow right" aria-label="下一页"><i class="fas fa-chevron-right"></i></button>
+                    <div class="page-indicator"><span id="page-num-2">1</span> / <span id="page-total-2">2</span></div>
+                </div>
+            </section>
+            <section class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-images"></i>
+                    高一（18）班 李珈如
+                </h2>
+                <div class="guide-gallery" id="guide-gallery-3">
+                    <button class="gallery-arrow left" aria-label="上一页"><i class="fas fa-chevron-left"></i></button>
+                    <div class="image-frame paper-effect">
+                        <img id="guide-image-3" src="../../static/images/导学案/高一（18）班_李珈如_01.jpg" alt="导学案图片-第1页">
+                    </div>
+                    <button class="gallery-arrow right" aria-label="下一页"><i class="fas fa-chevron-right"></i></button>
+                    <div class="page-indicator"><span id="page-num-3">1</span> / <span id="page-total-3">2</span></div>
+                </div>
+            </section>
+            <section class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-images"></i>
+                    高一（18）班 鲁亚衡
+                </h2>
+                <div class="guide-gallery" id="guide-gallery-4">
+                    <button class="gallery-arrow left" aria-label="上一页"><i class="fas fa-chevron-left"></i></button>
+                    <div class="image-frame paper-effect">
+                        <img id="guide-image-4" src="../../static/images/导学案/高一（18）班_鲁亚衡_01.jpg" alt="导学案图片-第1页">
+                    </div>
+                    <button class="gallery-arrow right" aria-label="下一页"><i class="fas fa-chevron-right"></i></button>
+                    <div class="page-indicator"><span id="page-num-4">1</span> / <span id="page-total-4">2</span></div>
+                </div>
+            </section>
+            <section class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-images"></i>
+                    高一（18）班 乔宇强
+                </h2>
+                <div class="guide-gallery" id="guide-gallery-5">
+                    <button class="gallery-arrow left" aria-label="上一页"><i class="fas fa-chevron-left"></i></button>
+                    <div class="image-frame paper-effect">
+                        <img id="guide-image-5" src="../../static/images/导学案/高一（18）班_乔宇强_01.jpg" alt="导学案图片-第1页">
+                    </div>
+                    <button class="gallery-arrow right" aria-label="下一页"><i class="fas fa-chevron-right"></i></button>
+                    <div class="page-indicator"><span id="page-num-5">1</span> / <span id="page-total-5">2</span></div>
+                </div>
+            </section>
+            <section class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-images"></i>
+                    高一（18）班 王乐璇
+                </h2>
+                <div class="guide-gallery" id="guide-gallery-6">
+                    <button class="gallery-arrow left" aria-label="上一页"><i class="fas fa-chevron-left"></i></button>
+                    <div class="image-frame paper-effect">
+                        <img id="guide-image-6" src="../../static/images/导学案/高一（18）班_王乐璇_01.jpg" alt="导学案图片-第1页">
+                    </div>
+                    <button class="gallery-arrow right" aria-label="下一页"><i class="fas fa-chevron-right"></i></button>
+                    <div class="page-indicator"><span id="page-num-6">1</span> / <span id="page-total-6">2</span></div>
+                </div>
+            </section>
+            <section class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-images"></i>
+                    高一（18）班 王楠
+                </h2>
+                <div class="guide-gallery" id="guide-gallery-7">
+                    <button class="gallery-arrow left" aria-label="上一页"><i class="fas fa-chevron-left"></i></button>
+                    <div class="image-frame paper-effect">
+                        <img id="guide-image-7" src="../../static/images/导学案/高一（18）班_王楠_01.jpg" alt="导学案图片-第1页">
+                    </div>
+                    <button class="gallery-arrow right" aria-label="下一页"><i class="fas fa-chevron-right"></i></button>
+                    <div class="page-indicator"><span id="page-num-7">1</span> / <span id="page-total-7">2</span></div>
+                </div>
+            </section>
+
+            <!-- 教学设计工具 -->
+            <section class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-tools"></i>
+                    教学设计工具
+                </h2>
+                <div class="design-tools">
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>教学目标生成器</h3>
+                        <p>根据课程标准自动生成教学目标</p>
+                        <button class="btn-primary" onclick="useTool('objective-generator')">
+                            <i class="fas fa-play"></i>
+                            使用工具
+                        </button>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+                        <h3>活动设计模板</h3>
+                        <p>提供丰富的课堂活动设计模板</p>
+                        <button class="btn-secondary" onclick="useTool('activity-templates')">
+                            <i class="fas fa-play"></i>
+                            使用工具
+                        </button>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>评价量规制作</h3>
+                        <p>帮助教师制作科学的评价量规</p>
+                        <button class="btn-primary" onclick="useTool('rubric-maker')">
+                            <i class="fas fa-play"></i>
+                            使用工具
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- 底部信息 -->
+        <footer class="module-footer">
+            <p class="footer-info">
+                <i class="fas fa-graduation-cap"></i>
+                基于人教版高中生物必修一课程标准设计
+            </p>
+        </footer>
+    </div>
+
+    <script src="../../js/module.js"></script>
+    <script>
+        function initGuideGallery(cfg) {
+            const images = cfg.images;
+            const imgEl = document.getElementById(cfg.imgId);
+            const pageNum = document.getElementById(cfg.pageNumId);
+            const pageTotal = document.getElementById(cfg.pageTotalId);
+            const gallery = document.getElementById(cfg.galleryId);
+            pageTotal.textContent = images.length;
+            let idx = 0;
+            function updateImage(newIdx) {
+                idx = (newIdx + images.length) % images.length;
+                imgEl.src = images[idx];
+                imgEl.alt = `导学案图片-第${idx+1}页`;
+                pageNum.textContent = idx + 1;
+                imgEl.classList.remove('fade-swap');
+                void imgEl.offsetWidth;
+                imgEl.classList.add('fade-swap');
+            }
+            gallery.querySelector('.gallery-arrow.left').addEventListener('click', () => updateImage(idx - 1));
+            gallery.querySelector('.gallery-arrow.right').addEventListener('click', () => updateImage(idx + 1));
+        }
+        initGuideGallery({
+            galleryId: 'guide-gallery',
+            imgId: 'guide-image',
+            pageNumId: 'page-num',
+            pageTotalId: 'page-total',
+            images: [
+                '../../static/images/导学案/高一（18）班_繆苏禾_01.jpg',
+                '../../static/images/导学案/高一（18）班_繆苏禾_02.jpg'
+            ]
+        });
+        initGuideGallery({
+            galleryId: 'guide-gallery-2',
+            imgId: 'guide-image-2',
+            pageNumId: 'page-num-2',
+            pageTotalId: 'page-total-2',
+            images: [
+                '../../static/images/导学案/高一（18）班_高楚旭_01.jpg',
+                '../../static/images/导学案/高一（18）班_高楚旭_02.jpg'
+            ]
+        });
+        initGuideGallery({
+            galleryId: 'guide-gallery-3',
+            imgId: 'guide-image-3',
+            pageNumId: 'page-num-3',
+            pageTotalId: 'page-total-3',
+            images: [
+                '../../static/images/导学案/高一（18）班_李珈如_01.jpg',
+                '../../static/images/导学案/高一（18）班_李珈如_02.jpg'
+            ]
+        });
+        initGuideGallery({
+            galleryId: 'guide-gallery-4',
+            imgId: 'guide-image-4',
+            pageNumId: 'page-num-4',
+            pageTotalId: 'page-total-4',
+            images: [
+                '../../static/images/导学案/高一（18）班_鲁亚衡_01.jpg',
+                '../../static/images/导学案/高一（18）班_鲁亚衡_02.jpg'
+            ]
+        });
+        initGuideGallery({
+            galleryId: 'guide-gallery-5',
+            imgId: 'guide-image-5',
+            pageNumId: 'page-num-5',
+            pageTotalId: 'page-total-5',
+            images: [
+                '../../static/images/导学案/高一（18）班_乔宇强_01.jpg',
+                '../../static/images/导学案/高一（18）班_乔宇强_02.jpg'
+            ]
+        });
+        initGuideGallery({
+            galleryId: 'guide-gallery-6',
+            imgId: 'guide-image-6',
+            pageNumId: 'page-num-6',
+            pageTotalId: 'page-total-6',
+            images: [
+                '../../static/images/导学案/高一（18）班_王乐璇_01.jpg',
+                '../../static/images/导学案/高一（18）班_王乐璇_02.jpg'
+            ]
+        });
+        initGuideGallery({
+            galleryId: 'guide-gallery-7',
+            imgId: 'guide-image-7',
+            pageNumId: 'page-num-7',
+            pageTotalId: 'page-total-7',
+            images: [
+                '../../static/images/导学案/高一（18）班_王楠_01.jpg',
+                '../../static/images/导学案/高一（18）班_王楠_02.jpg'
+            ]
+        });
+        // 模块特定的JavaScript功能
+        function useTool(toolId) {
+            alert(`使用工具: ${toolId} - 功能开发中，敬请期待！`);
+        }
+    </script>
+</body>
+</html>
